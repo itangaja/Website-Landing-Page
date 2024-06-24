@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    margin: 7rem 0;
+    padding: 0 5rem;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: #070F2B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.btn-nav a{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.btn-nav{
+    padding: 8px 18px;
+    width: auto;
+    height: 40px;
+}
+.btn-nav:hover{
+    box-shadow: 0 3px rgba(255, 255, 255, 1);
+}
+.masuk ul{
+    display: flex;
+    gap: 1rem;
+}
+.masuk .btn-masuk{
+    border: 1px solid white;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+.masuk .btn-masuk:hover{
+    background-color: white;
+    color: #070F2B;
+}
+#on{
+    background-color: white;
+    color: #070F2B;
+}
+.arti{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.arti h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.arti p{
+    width: 60%;
+    padding: 1rem;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px  rgba(0, 0, 0, .6);
+}
+.deskripsi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+.deskripsi h2{
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.deskripsi-container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease-in-out;
+    gap: 2rem;
+}
+.deskripsi-container .deskripsi-item{
+    width: 400px;
+    box-shadow: 0 3px rgba(0, 0, 0, .4);
+    height: 250px;
+    padding: 1rem 1rem 0 1rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.deskripsi-container .deskripsi-item h3{
+    text-align: center;
+    margin: .5rem;
+    font-size: 20px;
+}
+.deskripsi-container .deskripsi-item p{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+.deskripsi-container.show {
+    height: auto;
+}
+.deskripsi-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}

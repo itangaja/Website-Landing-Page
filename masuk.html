@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="itangifyy.png" type="image/x-icon">
+    <link rel="stylesheet" href="masuk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="masuk">
+        <div class="container">
+            <div class="pesan">
+                <h2>Masuk ke Akunmu</h2>
+                <p>Silahkan masuk dengan akun yang sudah terdaftar</p>
+                <a href="">
+                    <span><i class="fa-brands fa-google"></i>Masuk dengan Google</span>
+                </a>
+            </div>
+            <div class="batas">
+                <hr>
+            </div>
+            <div class="bawah">
+                <div class="login">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" id="email" placeholder="Masukkan Email Anda">
+                    </div>
+                    <div class="pw">
+                        <label for="password">Password</label>
+                        <br>
+                        <input type="password" id="password" placeholder="Masukkan Password Anda">
+                    </div>
+                    <div class="tampil">
+                        <input type="checkbox" id="show">
+                        <label for="show">Tampilkan Password</label>
+                    </div>
+                </div>
+                <button id="masukButton">Masuk</button>
+                <div class="daftar">
+                    <p>Belum punya Akun? <a href="daftar.html"><span>Daftar di sini</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        document.getElementById("masukButton").addEventListener("click", function(){
+            let userEmail = document.getElementById("email").value;
+            let userPw = document.getElementById("password").value;
+
+            let email = "itang123@gmail.com";
+            let pw = "aduh123";
+
+            if (userEmail === "" || userPw === ""){
+                alert("Masukkan Email dan Password")
+                return;
+            }
+            if(email !== userEmail){
+                alert("Email tidak terdaftar");
+                return;
+            }
+            
+            if(pw !== userPw){
+                alert("Password anda salah");
+                return;
+            }
+
+            alert("Login berhasil");
+
+            window.location.href = "landingPage.html";
+        });
+    </script>
+</body>
+</html>

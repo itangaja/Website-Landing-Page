@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle, #070f2b, #41425a, #7c7c8d, #bcbbc5, #ffffff);
+}
+.masuk{
+    background-color: white;
+    padding: 10px 16px;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.pesan{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.pesan span{
+    border: 1px solid black;
+    height: auto;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 20px;
+}    
+.pesan a{
+    text-decoration: none;
+    color: #070F2B;
+}
+.pesan span i{
+    margin-right: 10px;
+}
+.pesan span{
+    font-weight: 600;
+}
+.pesan span:hover{
+    background-color: #070F2B;
+    color: white;
+}
+.batas{
+    position: relative;
+}
+hr::after{
+    content: "ATAU";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 12%;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+}
+.login{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.login .email input,
+.login .pw input{
+    outline: none;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    font-weight: 600;
+    padding: 10px 8px;
+}
+.login label{
+    font-size: 16px;
+    font-weight: 500;
+}
+button{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform .3s ease;
+    opacity: .9;
+    background-color: #070F2B;
+    color: white;
+}
+button:hover{
+    opacity: 1;
+}
+.tampil{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.daftar{
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.daftar span{
+    color: #070F2B;
+    font-weight: 600;
+}
+.daftar span:hover{
+    font-weight: 700;
+}
+.daftar a{
+    text-decoration: none;
+}
