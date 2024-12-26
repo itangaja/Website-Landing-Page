@@ -1,2 +1,2 @@
 # Website-Landing-Page
-## Website landing page sederhana(statis)
+Website landing page sederhana(statis)
